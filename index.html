@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GILZPAY - TopUp Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 GILZPAY - TopUp Game</h1>
+
+    <label for="game">Pilih Game:</label>
+    <select id="game" onchange="loadProduk()">
+      <option value="">-- Pilih Game --</option>
+    </select>
+
+    <label for="uid">User ID:</label>
+    <input type="text" id="uid" placeholder="Contoh: 12345678" />
+
+    <label for="zone">Zone ID (opsional):</label>
+    <input type="text" id="zone" placeholder="Contoh: 1234" />
+
+    <label for="produk">Pilih Nominal:</label>
+    <select id="produk">
+      <option value="">-- Pilih Nominal --</option>
+    </select>
+
+    <button onclick="submitOrder()">Beli Sekarang</button>
+    <div id="status"></div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
